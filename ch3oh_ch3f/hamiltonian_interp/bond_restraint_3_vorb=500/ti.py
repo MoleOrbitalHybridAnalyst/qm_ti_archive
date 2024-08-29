@@ -1,0 +1,44 @@
+from glob import glob
+import numpy as np
+from scipy import integrate, interpolate
+from sys import argv
+if len(argv) > 1:
+    import matplotlib.pyplot as plt
+
+nblocks = 5
+lambdas = list()
+mean_forces = list()
+
+dirs = glob("0.*") + ["1.000"]
+for d in dirs:
+    lambdas.append(float(d))
+    with open(f"{d}/driver.out") as fp:
+        dEdl = list()
+        for line in fp:
+            dEdl.append(float(line.split()[-1]))
+        ntot = len(dEdl)
+        nchunk = ntot // nblocks
+        mean_force = list()
+        for i in range(nblocks):
+            mean_force.append(np.mean(dEdl[i*nchunk:(i+1)*nchunk]))
+        mean_forces.append(mean_force)
+
+lambdas = np.array(lambdas)
+mean_forces = np.array(mean_forces)
+order = np.argsort(lambdas)
+lambdas = lambdas[order]
+mean_forces = mean_forces[order]
+
+for iblock in range(nblocks):
+    f = interpolate.interp1d(lambdas, mean_forces[:,iblock].ravel(), kind='cubic')
+    F = 0
+    for x in np.arange(0, 1, 0.1):
+        F += integrate.quad(f, x, x + 0.1)[0]
+    print(F)
+    if len(argv) > 1:
+        plt.plot(np.linspace(0,1,100), f(np.linspace(0,1,100)))
+        plt.scatter(lambdas, mean_forces[:,iblock].ravel())
+if len(argv) > 1:
+    plt.show()
+
+np.savetxt('mean_force.dat', np.transpose([lambdas, np.mean(mean_forces, axis=1), np.std(mean_forces, axis=1)]))

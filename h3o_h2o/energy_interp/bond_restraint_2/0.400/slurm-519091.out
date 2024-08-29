@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/chhli/miniconda3/envs/pyscf/bin/i-pi", line 105, in <module>
+    main(args[0], options)
+  File "/home/chhli/miniconda3/envs/pyscf/bin/i-pi", line 70, in main
+    softexit.trigger(" @ SIMULATION: Exiting cleanly.")
+  File "/home/chhli/miniconda3/envs/pyscf/lib/python3.10/site-packages/ipi/utils/softexit.py", line 95, in trigger
+    f()
+  File "/home/chhli/miniconda3/envs/pyscf/lib/python3.10/site-packages/ipi/engine/forcefields.py", line 296, in softexit
+    self.stop()
+  File "/home/chhli/miniconda3/envs/pyscf/lib/python3.10/site-packages/ipi/engine/forcefields.py", line 368, in stop
+    self.socket.close()
+  File "/home/chhli/miniconda3/envs/pyscf/lib/python3.10/site-packages/ipi/interfaces/sockets.py", line 642, in close
+    os.unlink("/tmp/ipi_" + self.address)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/ipi_0.400'

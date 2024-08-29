@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --time=1-00:00:00
+#SBATCH -J 0.350
+#SBATCH --mail-user=charlotteslurm@gmail.com
+#SBATCH --mail-type=all
+#SBATCH --partition=serial
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+
+source ~/.bashrc
+conda activate pyscf
+. ~/share/load_pyscf.sh
+
+export OMP_NUM_THREADS=$SLURM_CPUS_ON_NODE
+
+rm -rf /tmp/ipi_0.350
+
+i-pi nvt.xml > nvt.out &
+pid=$!
+sleep 10
+
+python -u driver.py 0.350 > driver.out 
+
+wait

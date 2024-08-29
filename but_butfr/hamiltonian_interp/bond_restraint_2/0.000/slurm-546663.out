@@ -1,0 +1,2 @@
+/home/chhli/packages/pyscf_jojo/pyscf/gto/mole.py:1214: UserWarning: Function mol.dumps drops attribute tot_electrons because it is not JSON-serializable
+  warnings.warn(msg)
