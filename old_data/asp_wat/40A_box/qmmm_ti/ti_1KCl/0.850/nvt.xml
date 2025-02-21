@@ -1,0 +1,69 @@
+<simulation verbosity='high'>
+  <output prefix='simulation'>
+    <properties stride='1' flush='1'>[step, time{femtosecond}, conserved, potential, kinetic_cv, pressure_cv, volume, temperature{kelvin}, kinetic_md, pressure_md ] </properties>
+    <trajectory stride='50' format='xyz' filename='pos' cell_units='angstrom'> positions{angstrom} </trajectory>
+    <trajectory stride='50' format='xyz' filename='frc' cell_units='angstrom'> forces </trajectory>
+    <checkpoint stride='20' overwrite='true' filename='chk'/>
+    <checkpoint stride='5000' overwrite='false' filename='restart'/>
+  </output>
+
+  <total_steps>10000</total_steps>
+  <prng>
+    <seed>27506</seed>
+  </prng>
+
+  <ffsocket mode="unix" name="qm">
+    <latency>1e-3</latency>
+    <address>aspqm0.850</address>
+  </ffsocket>
+
+  <ffsocket mode="unix" name="mm">
+    <latency>1e-3</latency>
+    <address>aspmm0.850</address>
+  </ffsocket>
+
+  <!--
+  <ffplumed name="plumed">
+        <file mode="xyz">./geom.xyz</file>
+        <plumeddat> plumed.dat </plumeddat>
+  </ffplumed>
+  -->
+
+  <system>
+    <initialize nbeads='1'>
+        <file mode='xyz' units='angstrom'>./geom.xyz</file>
+        <cell mode='abc' units='angstrom'>[47.66706371,   47.66706371,  47.66706371]</cell>
+      <velocities mode='thermal' units='kelvin'>298.15</velocities>
+    </initialize>
+    <forces>
+        <force forcefield='qm' nbeads='1'>  
+        </force>
+        <force forcefield='mm' nbeads='1'>  
+        </force>
+    </forces>
+    <ensemble>
+      <temperature units='kelvin'>298.15</temperature>
+      <!--
+      <bias>
+         <force forcefield="plumed" nbeads="1"></force>
+      </bias>
+      -->
+    </ensemble>
+    <motion mode='dynamics'>
+      <dynamics mode='nvt'>
+      <timestep units="femtosecond">1.0</timestep>
+      <thermostat mode='langevin'>
+        <tau units='femtosecond'> 100 </tau>
+      </thermostat>
+      </dynamics>
+      <fixcom>True</fixcom>
+    </motion>
+  </system>
+
+  <!--
+  <smotion mode="metad">
+     <metad> <metaff> [ plumed ] </metaff> </metad>
+  </smotion>
+  -->
+
+</simulation>

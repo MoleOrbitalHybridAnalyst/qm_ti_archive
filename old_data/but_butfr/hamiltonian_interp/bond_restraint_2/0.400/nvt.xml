@@ -1,0 +1,43 @@
+<simulation verbosity='high'>
+  <output prefix='simulation'>
+    <properties stride='1' flush='1'>[step, time{femtosecond}, conserved, potential, kinetic_cv, pressure_cv, volume, temperature{kelvin}, kinetic_md, pressure_md ] </properties>
+    <trajectory stride='1' format='xyz' filename='pos' cell_units='angstrom'> positions{angstrom} </trajectory>
+    <checkpoint stride='1' overwrite='true' filename='chk'/>
+    <checkpoint stride='1000' overwrite='false' filename='restart'/>
+  </output>
+
+  <total_steps>10000</total_steps>
+  <prng>
+    <seed>27506</seed>
+  </prng>
+
+  <ffsocket mode="unix" name="0.400">
+    <latency>1e-3</latency>
+    <address>0.400</address>
+  </ffsocket>
+
+  <system>
+    <initialize nbeads='1'>
+        <file mode='xyz' units='angstrom'>init.xyz</file>
+        <cell mode='abc' units='angstrom'>[1000, 1000, 1000]</cell>
+      <velocities mode='thermal' units='kelvin'>310.15</velocities>
+    </initialize>
+    <forces>
+        <force forcefield='0.400' nbeads='1'>  
+        </force>
+    </forces>
+    <ensemble>
+      <temperature units='kelvin'>310.15</temperature>
+    </ensemble>
+    <motion mode='dynamics'>
+      <dynamics mode='nvt'>
+      <timestep units="femtosecond">0.5</timestep>
+      <thermostat mode='langevin'>
+        <tau units='femtosecond'> 100 </tau>
+      </thermostat>
+      </dynamics>
+      <fixcom>True</fixcom>
+    </motion>
+  </system>
+
+</simulation>
