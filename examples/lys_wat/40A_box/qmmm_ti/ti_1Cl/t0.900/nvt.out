@@ -1,0 +1,163 @@
+
+ ____       ____       ____       ____
+/    \     /    \     /    \     /    \
+|  #################################  |
+\__#_/     \____/     \____/     \_#__/
+   #    _        _______  _____    #
+   #   (_)      |_   __ \|_   _|   #      -*-     v 2.6.0  -*-
+   #   __  ______ | |__) | | |     #
+   Y  [  ||______||  ___/  | |     #      A Universal Force Engine
+  0 0  | |       _| |_    _| |_    #
+   #  [___]     |_____|  |_____|   #
+ __#_       ____       ____       _#__
+/  # \     /    \     /    \     / #  \
+|  #################################  |
+\____/     \____/     \____/     \____/
+
+    
+ # @simulation: Fetchingffsocket
+ # @simulation: Fetchingffsocket
+ # Initializing system object 
+ # Initializing simulation object 
+ # Initializer (stage 1) parsing positions object.
+ # Initializing from file ./geom.xyz. Dimension: length, units: angstrom, cell_units: automatic
+ # Interpreting input with dimension length, units angstrom and cell units angstrom
+ # Initializer (stage 1) parsing masses object.
+ # Initializing from file ./geom.xyz. Dimension: length, units: automatic, cell_units: automatic
+ # Interpreting input with dimension length, units angstrom and cell units angstrom
+ # Initializer (stage 1) parsing labels object.
+ # Initializing from file ./geom.xyz. Dimension: length, units: automatic, cell_units: automatic
+ # Interpreting input with dimension length, units angstrom and cell units angstrom
+ # Initializer (stage 1) parsing cell object.
+ # Initializing from file ./geom.xyz. Dimension: length, units: automatic, cell_units: automatic
+ # Interpreting input with dimension length, units angstrom and cell units angstrom
+ # Initializing from file ./geom.xyz. Dimension: length, units: automatic, cell_units: automatic
+ # Interpreting input with dimension length, units angstrom and cell units angstrom
+ # Initializer (stage 1) parsing cell object.
+ !W! Overwriting previous cell parameters
+ # Initializer (stage 1) parsing velocities object.
+ # Resampling velocities at temperature 298.15 kelvin
+ # Binding the forces 
+ # Initializer (stage 2) parsing positions object.
+ # Initializer (stage 2) parsing masses object.
+ # Initializer (stage 2) parsing labels object.
+ # Initializer (stage 2) parsing cell object.
+ # Initializer (stage 2) parsing cell object.
+ # Initializer (stage 2) parsing velocities object.
+Created unix socket with address tlysqm0.900
+ @ForceField: Starting the polling thread main loop.
+Created unix socket with address tlysmm0.900
+ @ForceField: Starting the polling thread main loop.
+ # i-PI loaded input file:  nvt.xml
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-16:58:15 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-19:55:12 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-20:18:29 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-20:23:26 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-20:33:06 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-20:57:55 Assigning [ none] request id    1 to client with last-id None (  0/  1 : )
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-20:58:09 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ @SOCKET: 25/02/21-20:58:19 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-20:58:19 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-20:59:41 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ # Average timings at MD step       0. t/step: 9.10867e+01
+ @SOCKET: 25/02/21-20:59:50 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-20:59:50 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-21:00:25 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ # Average timings at MD step       1. t/step: 4.33686e+01
+ @SOCKET: 25/02/21-21:00:33 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:00:33 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ !W!  @SOCKET:   Inconsistent client state in dispatch thread! (III)
+ !W!  @SOCKET:   Client  died or got unresponsive(C). Removing from the list.
+ @SOCKET:   Client asked for connection from . Now hand-shaking.
+ @SOCKET:   Handshaking was successful. Added to the client list.
+ @SOCKET: 25/02/21-21:02:38 Assigning [ none] request id    0 to client with last-id None (  0/  1 : )
+ # Average timings at MD step       2. t/step: 1.32860e+02
+ @SOCKET: 25/02/21-21:02:46 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:02:46 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step       3. t/step: 6.04460e+00
+ @SOCKET: 25/02/21-21:02:52 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:02:52 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step       4. t/step: 5.92427e+00
+ @SOCKET: 25/02/21-21:02:58 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:02:58 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step       5. t/step: 6.26933e+00
+ @SOCKET: 25/02/21-21:03:04 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:04 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step       6. t/step: 5.66034e+00
+ @SOCKET: 25/02/21-21:03:10 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:10 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step       7. t/step: 5.77342e+00
+ @SOCKET: 25/02/21-21:03:16 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:16 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step       8. t/step: 5.51177e+00
+ @SOCKET: 25/02/21-21:03:21 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:21 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step       9. t/step: 5.20479e+00
+ @SOCKET: 25/02/21-21:03:27 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:27 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      10. t/step: 4.78006e+00
+ @SOCKET: 25/02/21-21:03:31 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:31 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      11. t/step: 5.03023e+00
+ @SOCKET: 25/02/21-21:03:36 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:36 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      12. t/step: 6.28182e+00
+ @SOCKET: 25/02/21-21:03:43 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:43 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      13. t/step: 6.03413e+00
+ @SOCKET: 25/02/21-21:03:49 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:49 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      14. t/step: 4.81106e+00
+ @SOCKET: 25/02/21-21:03:53 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:53 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      15. t/step: 5.10250e+00
+ @SOCKET: 25/02/21-21:03:59 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:03:59 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      16. t/step: 5.32320e+00
+ @SOCKET: 25/02/21-21:04:04 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:04:04 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      17. t/step: 5.19377e+00
+ @SOCKET: 25/02/21-21:04:09 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:04:09 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      18. t/step: 5.75410e+00
+ @SOCKET: 25/02/21-21:04:15 Assigning [match] request id    0 to client with last-id    0 (  0/  1 : )
+ @SOCKET: 25/02/21-21:04:15 Assigning [match] request id    1 to client with last-id    1 (  0/  1 : )
+ # Average timings at MD step      19. t/step: 6.02540e+00
+SOFTEXIT CALLED FROM THREAD <_MainThread(MainThread, started 140593809471296)>  @ SIMULATION: Exiting cleanly.
+ !W! Soft exit has been requested with message: ' @ SIMULATION: Exiting cleanly.
+I-PI reports success. Restartable as is: NO.'. Cleaning up.
+ @SOCKET: Shutting down the driver interface.
+ @SOCKET: Shutting down the driver interface.
+SOFTEXIT: Saving the latest status at the end of the step
